@@ -3,7 +3,7 @@ html {
 }
 
 html {
-  background: #4B69FD;
+  background: #0a0262;
   border: 2px solid black;
   font-family: 'Poppins', sans-serif;
 }
@@ -12,6 +12,12 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+section {
+  width: 100%;
+  text-align: center;
+  max-width: 900px;
 }
 
 h2 {

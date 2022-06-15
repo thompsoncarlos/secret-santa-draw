@@ -11,6 +11,13 @@ jest.mock('../state/hook/useListParticipant', () => {
 })
 
 const mockNavigate = jest.fn()
+const mockDraw = jest.fn()
+
+jest.mock('../state/hook/useDraw', () => {
+    return {
+        useDraw: () => mockDraw
+    }
+})
 
 jest.mock('react-router-dom', () => {
     return {
@@ -47,8 +54,8 @@ describe("When there are enough participants", () => {
                 <Footer />
             </RecoilRoot>
         )
-        const button = screen.getByRole('button')
-        expect(button).not.toBeDisabled()
+        const buttonDraw = screen.getByRole('button')
+        expect(buttonDraw).not.toBeDisabled()
     })
 
     test('The draw was started', () => {
@@ -61,5 +68,6 @@ describe("When there are enough participants", () => {
         fireEvent.click(buttonDraw)
         expect(mockNavigate).toHaveBeenCalledTimes(1)
         expect(mockNavigate).toHaveBeenCalledWith('/draw')
+        expect(mockDraw).toHaveBeenCalledTimes(1)
     })
 })

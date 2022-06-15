@@ -6,9 +6,9 @@ const ParticipantsList = () => {
 
   return (
     <ul>
-        {participants.map(participant => <li key={participant}>{participant}</li>)};
+        {participants.map(participant => <li key={participant}>{participant}</li>)}
     </ul>
-    );
-};
+    )
+}
 
 export default ParticipantsList;

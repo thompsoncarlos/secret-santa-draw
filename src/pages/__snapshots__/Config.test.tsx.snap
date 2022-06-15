@@ -26,9 +26,7 @@ exports[`The config page should be render correctly 1`] = `
         </div>
         
       </form>
-      <ul>
-        ;
-      </ul>
+      <ul />
       <footer
         class="config-footer"
       >
@@ -38,6 +36,10 @@ exports[`The config page should be render correctly 1`] = `
         >
           Start
         </button>
+        <img
+          alt="shopping bags"
+          src="/images/sacolas.png"
+        />
       </footer>
     </section>
   </div>
