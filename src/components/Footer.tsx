@@ -23,7 +23,7 @@ const Footer = () => {
       >
         Start
       </button>
-      <img src="/images/sacolas.png" alt="shopping bags" />
+      <img src="/images/bags.png" alt="shopping bags" />
     </footer>
   );
 };
