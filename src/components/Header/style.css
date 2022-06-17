@@ -5,7 +5,7 @@
 }
 
 .imagem-logo {
-    background-image: url("/public/images/logo.png");
+    background-image: url("/public/images/logo-skull.png");
     width: 351px;
     height: 211px;
 }
@@ -22,7 +22,7 @@
     }
 
     .imagem-logo {
-        background-image: url("/public/images/logo-pequeno.png");
+        background-image: url("/public/images/logo-skull-small.png");
         width: 235px;
         height: 199px;
     }

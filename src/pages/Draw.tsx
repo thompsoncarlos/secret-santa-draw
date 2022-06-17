@@ -41,7 +41,7 @@ const Draw = () => {
         </form>
         {secretFriend && <p className="result" role="alert">{secretFriend}</p>}
         <footer className="draw">
-                <img src="/images/aviao.png" className="aviao" alt="A drawing of a paper plane" />
+                <img src="/images/plane.png" className="plane" alt="A drawing of a paper plane" />
             </footer>
       </section>
     </Card>
